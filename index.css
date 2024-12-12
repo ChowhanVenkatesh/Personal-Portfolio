@@ -1,3 +1,70 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.page-design {
+    background-color: #f5d0c6;
+    background-size: cover;
+    padding: 10px;
+}
+
+.intro-session {
+    padding: 5px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+.title-design {
+    font-family: 'Bree Serif';
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
     color: orange;
+    font-weight: bold;
+}
+
+.description-design {
+    font-family: 'Bree Serif';
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    font-weight: normal;
+}
+
+.midddle-session {
+    padding: 5px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+.season-title {
+    font-family: 'Bree Serif';
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+}
+
+.container-box {
+    padding: 5px;
+    margin: 3px 0px 3px 0px;
+    width: 100vw;
+}
+
+.row-box {
+    text-align: center;
+}
+
+.image {
+    height: 140px;
+    width: 160px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.name-design {
+    font-family: 'Bree Serif';
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    color: black;
 }
