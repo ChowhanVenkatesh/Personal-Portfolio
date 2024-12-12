@@ -1,187 +1,762 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Venkatesh Tech Aspirant </title>
+    <!--- favicon --->
+    <link rel="shortcut icon" href="images\my-avatar.png" type="image/x-icon">
+    <!--- custom css link --->
     <link rel="stylesheet" href="index.css">
+    <!--- google font link --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/974c2a4973.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="page-design">
-        <div class="intro-session">
-            <h1 class="title-design"> Bigg Boss Love Birds </h1>
-            <p class="description-design"> In every season of Bigg Boss Telugu, there have been captivating
-                connections that spark discussions among fans, especially when it comes to romance.
-                Many contestants start off as strangers but develop a close bond due to the intense,
-                enclosed environment of the house. These relationships often include romantic undertones,
-                with a few pairs showing genuine affection and others maintaining an ambiguous stance
-                on their connection. Some couples openly express their emotions, while others leave
-                viewers guessing with subtle gestures and lingering gazes. At times, these connections
-                lead to dramatic moments filled with passion, misunderstandings, and reconciliations,
-                adding to the show’s appeal. While some couples continue their bond even after leaving
-                the house, others clarify that they were just friends or drift apart once the season ends.
-                Regardless of the outcomes, these love stories bring a unique dynamic to each season,
-                keeping audiences engaged and rooting for their favorite pairs.
-            </p>
+    <!--- #MAIN --->
+    <main>
+        <!--- #SIDEBAR --->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1694928123/profile_pic-removebg-preview_wtafhg.png" class="image" alt="Chowhan Venkatesh" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name name-sizes" title="Chowhan Venkatesh">Chowhan Venkatesh</h1>
+                    <p class="title"> Tech Aspirant </p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="myselfvenkatesh9@gmail.com" class="contact-link">myselfvenkatesh9@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+917989154452" class="contact-link">+91 7989154452</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="2002-12-15">December 15, 2002</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Hyderabad, Telangana, India</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/profile.php?id=100067432751824&mibextid=ZbWKwL" class="social-link" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://twitter.com/PalthyavthV?t=KkOQFMbnvgEP0G8tpSBA9w&s=09" class="social-link" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://instagram.com/venkatesh_chowhan?igshid=ZDc4ODBmNjlmNQ==" class="social-link" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/pathlavathvenkatesh-/" class="social-link" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!--- #main-content --->
+        <div class="main-content">
+            <!--- #NAVBAR --->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Certificates</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Gallery</button>
+                    </li>
+                </ul>
+            </nav>
+            <!--- #ABOUT --->
+            <article class="about  active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+                <section class="about-text">
+                    <p>
+                        &nbsp;&nbsp;&nbsp; Tech Aspirant | Passionate about Leveraging Technology to Create Innovative Solutions
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp; 👋 Hello! I am Pathlavath Venkatesh, As a passionate tech enthusiast,
+                        I am deeply committed to exploring and mastering the latest advancements in technology.
+                        With a strong foundation in programming, web development, and database management,
+                        I have honed my skills through both academic projects and hands-on experience.
+                        Proficient in languages such as Web Development, Fundation of Python, and SQL, I bring a problem-solving mindset
+                        and a drive for innovation to every challenge I undertake. My technical expertise spans
+                        from building efficient algorithms to optimizing website SEO performance,
+                        enabling me to contribute effectively in various domains within the tech industry.
+                        With a constant thirst for learning, I aim to leverage my skills to create impactful solutions
+                        that drive success in the ever-evolving digital world.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp; 🔍 Key Skills:
+                    <ol>
+                        <li> &nbsp;&nbsp;&nbsp; - HTML & CSS </li>
+                        <li> &nbsp;&nbsp;&nbsp; - On going Skill: JavaScript </li>
+                        <li> &nbsp;&nbsp;&nbsp; - Fundation of Python </li>
+                        <li> &nbsp;&nbsp;&nbsp; - Learning DSA with C++ programming language </li>
+                        <li> &nbsp;&nbsp;&nbsp; - Data Visualization (using tools like Excel, Power BI, SQL ) </li>
+                        <li> &nbsp;&nbsp;&nbsp; - SQL & Database Management </li>
+                        <li> &nbsp;&nbsp;&nbsp; - Problem-Solving & Critical Thinking </li>
+                    </ol>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp; 🌟 As an aspiring tech professional,
+                        I am dedicated to continuous learning and growth in the ever-evolving field
+                        of technology. Let's connect to explore opportunities, share insights,
+                        and collaborate on projects that leverage cutting-edge technologies to
+                        drive innovation and success.
+                    </p>
+                </section>
+                <!--- service --->
+                <section class="service">
+                    <h3 class="h3 service-title">What i'm doing</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695538919/coding_xpxbz4.png" alt="coding icon" width="50" height="50">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Portfolio design</h4>
+                                <p class="service-item-text">
+                                    "I excel in coding for personal portfolios and blogging websites, proficiently using programming languages
+                                    such as HTML, CSS, and JavaScript at a professional level. You can review my portfolio design projects
+                                    within my portfolio for examples."
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695539035/mobile_hhr08v.png" alt="mobile icon" width="50" height="50">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+                                <p class="service-item-text">
+                                    "I possess professional-level expertise in crafting and tailoring user-friendly, responsive websites
+                                    for all devices using the WordPress tool. I have the capability to design websites
+                                    of any type utilizing WordPress."
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695539136/presentation_asaxrb.png" alt="power bi icon" width="50" height="50">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title"> Power BI Dashboards </h4>
+                                <p class="service-item-text">
+                                    "I possess advanced skills in developing professional-level business analytics
+                                    dashboards using the Power BI tool. You can review my Power BI projects within
+                                    my portfolio for reference."</p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695539190/database_m0nrt6.png" alt="database icon" width="50" height="50">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title"> Data Analytics </h4>
+                                <p class="service-item-text">
+                                    "I excel in analyzing raw business data and extracting valuable insights using
+                                    SQL and Microsoft Excel tools at a professional level. You can explore my analysis
+                                    projects in my portfolio for further reference." </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!--- testimonials modal --->
+                <div class="modal-container" data-modal-container>
+                    <div class="overlay" data-overlay></div>
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="images\avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                            </figure>
+                            <img src="images\icon-quote.svg" alt="quote icon">
+                        </div>
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title> Sweetha </h4>
+                            <time datetime="2021-06-14">14 June, 2023</time>
+                            <div data-modal-text>
+                                <p>
+                                    "Utilizing my skills and knowledge, I crafted a personal portfolio for my friend,
+                                    which proved instrumental in enhancing hands-on experience in website design."
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <!--- #RESUME --->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Gati Shakti Vishwavidyalaya - Vadodara, Gujarat.</h4>
+                            <span>October 2021 — June 2024</span>
+                            <p class="timeline-text">
+                                Bachelor of Science, Transportation Technology. <br>
+                                Core Courses: Data Analytics & Representation, &nbsp; Project Management, &nbsp; ITS.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Telangana Tribal Welfare Residential Junior College - Kulkacherla,Vikarabad.</h4>
+                            <span>July 2019 — July 2021</span>
+                            <p class="timeline-text">
+                                Intermediate State Board. <br>
+                                Subjects: Mathematics, &nbsp; Physics, &nbsp; Chemistry.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Governement High School - Chukkapur, Talakonda Pally, Ranga Reddy</h4>
+                            <span>2007 — May 2019</span>
+                            <p class="timeline-text">
+                                From first standard to tenth standard in Telugu Medium. <br>
+                                Subjects: Telugu, &nbsp; Hindi, &nbsp; English, &nbsp; Mathematics, &nbsp; Science, &nbsp; Social.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title"> Digital Marketing Executive - Ashoka Franmark </h4>
+                            <span>July 2024 — Full time </span>
+                            <p class="timeline-text">
+                                As a Digital Marketing Executive, I am responsible for developing, implementing,
+                                and managing marketing campaigns that promote the products and services of the organization.
+                                My role includes enhancing brand awareness within the digital space, driving website traffic,
+                                and acquiring leads/customers. And also identify and evaluate new digital technologies and
+                                use web analytics tools to measure site traffic to better optimize marketing campaigns,
+                                email marketing, social media, and display and search advertising.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title"> Web Designing Virtual Internship - Bharat Intern </h4>
+                            <span>June 2023 — July 2023</span>
+                            <p class="timeline-text">
+                                During my one-month virtual internship with Bharat Intern Organization, I immersed myself in the dynamic
+                                world of web development. Leveraging HTML, CSS, and JavaScript, I crafted a responsive and visually captivating
+                                Personal Portfolio website. This immersive experience not only honed my technical skills but also allowed me
+                                to showcase my creative flair in designing user-friendly web interfaces. I am proud to have contributed to the
+                                ever-evolving landscape of digital presence and am eager to continue exploring and expanding my skills in this
+                                exciting field.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Ojaska Private Limited - T- HUB, Hyderabad</h4>
+                            <span>May 2023 — July 2023</span>
+                            <p class="timeline-text">
+                                It was a 6 weeks internship on the theme “OPERATIONS and MARKETING” in the OJASKA Company in T-HUB, Hyderabad.
+                                Assisted in developing and executing digital marketing campaigns, including social media content creation
+                                and email marketing. Conducted market research to identify consumer trends and competitors' strategies.
+                                Contributed to the creation of marketing materials such as brochures and presentations.
+                                Collaborated with cross-functional teams to optimize website content and enhance user experience.
+                                Gained practical experience in data analysis and campaign performance evaluation. <br>
+                                Skills: &nbsp; Marketing strategies and Marketing Management.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title"> Secunderabad DRM Office - Hyderabad </h4>
+                            <span>July 2022 — August 2022</span>
+                            <p class="timeline-text">
+                                It was a 4 weeks internship on the theme “IT INTEGRATION OF SUPPLY CHAIN ACROSS VARIOUS ZONES IN INDIAN RAILWAY”
+                                in the Secunderabad division (Hyderabad Bhavan) of Indian Railways.
+                                The theory about the theme is The IT integration of supply chain operations in Indian Railways
+                                involves the use of modern technologies such as GPS tracking, data analytics, and cloud computing.
+                                By adopting these technologies, Indian Railways has been able to enhance the transparency of operations
+                                and enable real-time data access across various zones. The integration of IT has also allowed the management
+                                to make informed decisions and optimize operations, reducing transit times and minimizing delays.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="skill">
+                    <h3 class="h3 skills-title">Skills Track </h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5 myskills-color">Web design and developing</h5>
+                                <data value="80">80%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5 myskills-color"> Python and SQL </h5>
+                                <data value="45">45%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 45%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5 myskills-color">Excel & Power BI </h5>
+                                <data value="90">90%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5 myskills-color">WordPress</h5>
+                                <data value="90">90%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--- #PORTFOLIO --->
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn> Web design </button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn> Data Analytics </button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn> Youtube Thumbnails </button>
+                        </li>
+                    </ul>
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-selecct-value>Select category</div>
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item>Web design</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item> Data Analytics </button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item> Youtube Thumbnails </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="project-list">
+                        <li class="project-item  active" data-filter-item data-category="data analytics">
+                            <a href="https://github.com/ChowhanVenkatesh/Madhav-Stores-Dashboard-using-Power-BI.git" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695967751/Madhav_Dashboard_yemi5w.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Madhav Ecommerce Sales Dashboard By Using Power BI </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="data analytics">
+                            <a href="https://github.com/ChowhanVenkatesh/HR-Analytics-Dashboard.git" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1696155763/Post_Photo_htu8ck.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> HR Analytics Dashboard By Using Power BI </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="youtube thumbnails">
+                            <a href="https://youtu.be/BpocnN1KmsY?si=chIAZLrZ4yG7ExPO" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1720860934/my_first_interview_experience_r1egup.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> My First Interview Experience </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="data analytics">
+                            <a href="https://github.com/ChowhanVenkatesh/Varadhi_Store-Data-Analysis-using-Excel.git" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1694613889/Varadhi_Store_Sales_Data_igkm95.png" alt="Varadhi Stores" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Varadhi Stores Sales Analysics By Using Excel </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="https://amazonclonepage.ccbp.tech/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1689419427/amazon_spz8e6.png" alt="Amazon Clone" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Amazon Landing Page Clone</h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="data analytics">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1694335260/UPCOMING_ybhm1u.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> UP COMING </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="youtube thumbnails">
+                            <a href="https://youtu.be/81ZGeH71qm4?si=_wHdM0xzt_2Dp0aO" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1720930335/thub_m3wvee.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> T-HUB Experience as Marketing Intern </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="https://netflixlanding.ccbp.tech/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1689419505/netflix_dnxyae.jpg" alt="Netflix Clone" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Netflix Clone </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="youtube thumbnails">
+                            <a href="https://youtu.be/BpocnN1KmsY?si=chIAZLrZ4yG7ExPO" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1720864100/VENKATESH_p8ivxu.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> My First Interview Experience </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="https://myselfvenkatesh.ccbp.tech/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695540002/portfolio_cvbiep.png" alt="Portfolio" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Portfolio </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="youtube thumbnails">
+                            <a href="https://youtu.be/1iPJQy97Sv8" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1720864181/MBA_2_igai5j.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> MBA BA First Sem Subjects </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1694335260/UPCOMING_ybhm1u.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> UP COMING </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="data analytics">
+                            <a href="https://github.com/ChowhanVenkatesh/Super-Market-Sales-Analysis-and-Forecasting.git" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1696264705/post_photo_2_xkgjut.png" alt="SMSA and Forecasting" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Super Market Sales Analysis & Forecasting By Using Power BI </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="youtube thumbnails">
+                            <a href="https://youtu.be/onj-UoZ3Jxo" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1720872606/home_mnygj6.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> My Home Tour </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="data analytics">
+                            <a href="https://github.com/ChowhanVenkatesh/Using_Excel_to_Create_Road_Accident_Dashboard.git" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1694613611/Road_Accident_Dashboard_dz37te.png" alt="Road Accident Dashboard" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Road Accident Dashboard By Using Excel </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="youtube thumbnails">
+                            <a href="https://youtu.be/q2NGKtAMvHc" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1720872620/PLACEMENT_u4mx1s.png" alt="UP COMING" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> My Placement Preparation Started </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--- #Certificates --->
+            <article class="certificates" data-page="certificates">
+                <header>
+                    <h2 class="h2 article-title"> Certificates </h2>
+                </header>
+                <section class="certificates">
+                    <ul class="project-list">
+                        <li class="project-item  active" data-filter-item data-category="power bi">
+                            <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/4283237/original/Pathlavath_Venkatesh20240305-73-1amkyyr.jpg" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1722063894/Introduction_to_Business_Logistics_ntoxli.png" target="_blank" alt="Introduction_to_Business_Logistics" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Introduction to Business Logistics </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="power bi">
+                            <a href="https://certificates.simplicdn.net/share/thumb_4150557_1675797878.png" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1722179034/Design_Thinking_yckgsn.png" target="_blank" alt="Introduction_to_Design_Thinking" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Design Thinking for Beginners </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="power bi">
+                            <a href="https://dtmvamahs40ux.cloudfront.net/ComplementaryCourseCertificate/3336056/original/Pathlavath_Venkatesh20230914-73-15rsqpb.jpg" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1722183019/Power_BI_qwdtct.png" target="_blank" alt="Data_Visualization_with_power_bi" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Data Visualization with Power BI </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="power bi">
+                            <a href="https://certificates.simplicdn.net/share/thumb_4111609_1674458950.png" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1722179017/Data_Science_oenuba.png" target="_blank" alt="Introduction_to_Data_Science" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Introduction to Data Science </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="power bi">
+                            <a href="https://media-content.ccbp.in/certificates/share/TMGNXLDSSJ.png" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1722184006/Static_Website_kr9zu4.png" target="_blank" alt="Static_website" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Static Website </h3>
+                            </a>
+                        </li>
+                        <li class="project-item  active" data-filter-item data-category="power bi">
+                            <a href="https://internshala-uploads.internshala.com/student_certificates/640964f4bcf5b1678337268.png" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1722184454/Content_Writer_ie0n2v.png" target="_blank" alt="Static_website" loading="lazy">
+                                </figure>
+                                <h3 class="project-title"> Content Writer </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <!--- #Gallery --->
+            <article class="blog" data-page="gallery">
+                <header>
+                    <h2 class="h2 article-title"> Gallery </h2>
+                </header>
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695541811/Last_Day_t-hub_hclzmv.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695540973/With_mentor_yjqtiv.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695541276/happy_pqyy9n.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695541828/middle_day_t-hub_el4rzc.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695541126/last_day_coding_quaquv.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1689419578/intern-1_xjr0bx.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1689419649/intern-3_jpqxwz.jpg" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="gallery-post-item">
+                            <a href="#">
+                                <figure class="gallery-banner-box">
+                                    <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1695542307/Last_Style_fn8uiy.webp" alt="Internship in 2023" loading="lazy">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
         </div>
-        <div class="middle-session">
-            <h2 class="season-title"> Season One </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839883/prince_cecil_ehbvx6.jpg" alt="prince cecil" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/princececil3/"> Prince Cecil </a> </h3>
-                        </div>
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839881/diksha_panth_fdy14z.jpg" alt="diksha panth" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/dikshapanth/"> Diksha Panth </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Two </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839884/thanish_alladi_vjiko0.webp" alt="tanish alladi" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/tanishalladi/"> Tanish Alladi </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3  col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839882/deepthi_sunaina_v0wlfl.jpg" alt="deepthi sunaina" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/deepthi_sunaina/"> Deepthi Sunaina </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3  col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839883/samrat_reddy_d6ivf3.webp" alt="samrat reddy" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/samratreddy/"> Samrat Reddy </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3  col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839884/tejashwini_madivada_lyi6ks.jpg" alt="Tejaswini" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/tejaswimadivada/"> Tejaswi Madivada </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Three </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839882/rahul_sipligunj_tbv8pn.webp" alt="rahul " class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/sipligunjrahul/"> Rahul Sipligunj </a> </h3>
-                        </div>
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839882/Punarnavi-Bhupalam_bcogyz.jpg" alt="punarnavi" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/punarnavib/"> Punarnavi Bhupalam </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Four </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839881/akhil-sarthak_cybtlp.webp" alt="akhil Sarthak" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/akhilsarthak_official/"> Akhil Sarthak </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839883/Monal_Gajjar_eca2tv.jpg" alt="monal gajjar" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/monal_gajjar/"> Monal Gajjar </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839882/abhijeeth_rwhqdz.jpg" alt="abhijeeth" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/abijeet11/"> Abijeet Duddala </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839882/harika_cohl0d.jpg" alt="harika" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/alekhyaharika_/"> Alekhya Harika </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Five </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839883/shannu_yzo39w.jpg" alt="shannu" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/shannu_7/"> Shanmukh Jaswanth </a> </h3>
-                        </div>
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839884/Siri-Hanumanth_px8auu.jpg" alt="siri" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/sirihanmanth/"> Siri Hanmanth </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Six </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839881/arjun-kalyan_xyyqjz.webp" alt="arjun kalyan" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/iamarjunkalyan/"> Arjun Kalyan </a> </h3>
-                        </div>
-                        <div class="col-6 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729839884/SriSatya_is9fbw.jpg" alt="sri satya" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/sri_satya_/"> Sri Satya </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Seven </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729838936/pallavi_prasanth_bomf7c.jpg" alt="pallavi Prashanth" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/pallaviprashanth_/"> Pallavi Prashanth </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729838937/rathika_1_juc7ba.png" alt="rathika rose" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/rathikaravinder/"> Rathika Rose </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729838936/Prince-Yawar_pztfeq.jpg" alt="prince yawar" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/princeyawar/"> Prince Yawar </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1729838937/rathika_2_sm3tak.png" alt="rathika rose" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/rathikaravinder/"> Rathika Rose </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="season-title"> Season Eight </h2>
-            <div class="d-flex flex-row justify-content-center">
-                <div class="container container-box">
-                    <div class="row row-box">
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1726481690/prithviraj_plkotw.webp" alt="prithvi raj shetty" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/prithvirajshetty19/"> Prithvi Raj shetty </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1726481779/vishnupriya_zzd7kb.webp" alt="vishnu priya" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/vishnupriyabhimeneni/"> Vishnu Priya </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1726481690/nikhil_glzt6d.webp" alt="nikhil maliyakkal" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/nikhilmaliyakkal_official/"> Nikhil Maliyakkal </a> </h3>
-                        </div>
-                        <div class="col-6 col-md-3 col-lg-3 col-xl-3 col-box">
-                            <img src="https://res.cloudinary.com/myselfvenkatesh/image/upload/v1726481768/Yashmi-Gowda_gvyubo.webp" alt="yashmi gowda" class="image" />
-                            <h3 class="name-design"> <a href="https://www.instagram.com/yashmigowda/"> Yashmi Gowda </a> </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
+    <!--- custom js link --->
+    <script src="C:\Users\pathl\OneDrive\Desktop\Web Projects\Personal Portfolio Project 2\script.js"></script>
+    <!--- ionicon link --->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
