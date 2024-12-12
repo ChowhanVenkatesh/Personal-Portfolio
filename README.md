@@ -9,20 +9,14 @@ This is a personal portfolio website designed to showcase my skills, projects, a
 - Showcase projects with descriptions and live links.
 - Provide an easy way to contact me.
 
----
-
 ## Features
 - Responsive design for all devices.
 - Interactive project gallery.
 - Clean and modern UI/UX.
 - Contact form with email integration.
 
----
-
 ## Technologies Used
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap (modify as applicable)
-
----
 
 ## Installation
 
@@ -47,8 +41,6 @@ This is a personal portfolio website designed to showcase my skills, projects, a
    npm start
    ```
 
----
-
 ## Usage
 1. Open the project in your browser:
    ```
@@ -56,8 +48,6 @@ This is a personal portfolio website designed to showcase my skills, projects, a
    ```
 2. Navigate through the sections: Home, About, Projects, Contact.
 3. Explore project demos and download the resume.
-
----
 
 ## Contributing
 Contributions are welcome! If you'd like to suggest changes or enhancements, please:
@@ -76,15 +66,11 @@ Contributions are welcome! If you'd like to suggest changes or enhancements, ple
    ```
 5. Open a pull request.
 
----
-
 ## Contact
 - **Name:** Chowhan Venkatesh
 - **Email:** myselfvenkatesh9@gmail.com
 - **Portfolio:** [https://my-portfolio-link.com](https://chowhantech.ccbp.tech/)
 - **LinkedIn:** [https://linkedin.com/in/my-profile](https://www.linkedin.com/in/pathlavathvenkatesh-/)
-
----
 
 Thank you for visiting my portfolio repository!
 
